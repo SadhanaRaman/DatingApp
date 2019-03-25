@@ -10,6 +10,8 @@ namespace DatingApp.API.Data
 
         //Value is the name of the model, Values is the table name in DB
         public DbSet<Value> Values {get;set;}
+
+         public DbSet<User> User {get;set;}
         
     }
 }
