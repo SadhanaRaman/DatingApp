@@ -1,0 +1,4 @@
+if ng serve is not terminated
+1 netstat -ano | findstr :4200
+copy port it is listening to
+2 TASKKILL /PID 3496 /F
