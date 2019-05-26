@@ -14,11 +14,14 @@ registerMode = false;
     this.getValues();
   }
 registerToggle(){
-  this.registerMode = !this.registerMode;
+  this.registerMode = true;
 }
 getValues(){
   this.http.get('http://localhost:5000/api/values').subscribe(response => {this.values = response;} 
   ,error => {console.log(error);});   
 }
-
+cancelRegisterMode(registerMode:boolean)
+{
+  this.registerMode = registerMode;
+}
 }
